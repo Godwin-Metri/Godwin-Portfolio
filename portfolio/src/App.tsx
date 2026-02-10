@@ -1,4 +1,8 @@
-import NavBar from "./components/layout/NavBar";
+import NavBar from "./components/layout/Navbar";
+import Section from "./components/common/Section";
+import Skills from "./components/sections/Skills";
+import Hero from "./components/sections/Hero";
+import About from "./components/sections/About";
 
 function App() {
   return (
@@ -6,33 +10,25 @@ function App() {
       <NavBar />
 
       <main className="pt-16">
-        <section
-          id="home"
-          className="h-screen flex items-center justify-center"
-        >
-          <h1 className="text-4xl font-bold">Home</h1>
-        </section>
+        <Hero />
 
-        <section
-          id="about"
-          className="h-screen flex items-center justify-center bg-gray-50"
-        >
-          <h1 className="text-4xl font-bold">About</h1>
-        </section>
+        <About />
 
-        <section
+        <Skills />
+
+        <Section
           id="projects"
           className="h-screen flex items-center justify-center"
         >
           <h1 className="text-4xl font-bold">Projects</h1>
-        </section>
+        </Section>
 
-        <section
+        <Section
           id="contact"
           className="h-screen flex items-center justify-center bg-gray-50"
         >
           <h1 className="text-4xl font-bold">Contact</h1>
-        </section>
+        </Section>
       </main>
     </div>
   );
