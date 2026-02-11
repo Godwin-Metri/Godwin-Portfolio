@@ -1,5 +1,6 @@
 import FadeIn from "../common/FadeIn";
 import Section from "../common/Section";
+import { Mail, Github, Linkedin, FileText } from "lucide-react";
 
 function Contact() {
   return (
@@ -8,13 +9,13 @@ function Contact() {
         <div className="flex flex-col items-center gap-10 text-center max-w-2xl mx-auto">
           {/* Header */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
               Let’s Build Something Together
             </h2>
 
-            <div className="mt-3 mx-auto h-1 w-24 bg-blue-600 rounded-full" />
+            <div className="mt-3 mx-auto h-1 w-24 bg-blue-600 dark:bg-blue-400 rounded-full" />
 
-            <p className="mt-4 text-gray-600">
+            <p className="mt-4 text-gray-600 dark:text-gray-300">
               Interested in collaborating, discussing backend systems,
               distributed architecture, or new opportunities? I’d love to
               connect.
@@ -22,33 +23,51 @@ function Contact() {
           </div>
 
           {/* Contact Links */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-6 items-center">
+            {/* Primary CTA Button */}
             <a
               href="mailto:godwin3120@gmail.com"
-              className="px-6 py-3 rounded-md bg-gray-900 text-white text-sm font-medium hover:bg-gray-800 hover:-translate-y-0.5 active:scale-95 transition-all duration-200"
+              className="
+                inline-flex items-center gap-2
+                px-6 py-3 rounded-md
+                bg-gray-900 text-white
+                dark:bg-blue-600 dark:text-white
+                text-sm font-medium
+                hover:bg-gray-800 dark:hover:bg-blue-500
+                hover:-translate-y-0.5 active:scale-95
+                transition-all duration-200
+              "
             >
-              Connect Me
+              <Mail size={16} />
+              Email Me
             </a>
 
-            <div className="flex gap-6 justify-center text-sm text-blue-600 font-medium">
+            {/* Secondary Links */}
+            <div className="flex gap-8 justify-center text-sm font-medium">
               <a
                 href="https://github.com/Godwin-Metri"
                 target="_blank"
-                className="hover:underline"
+                className="flex items-center gap-2 text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors"
               >
+                <Github size={16} />
                 GitHub
               </a>
 
               <a
                 href="https://www.linkedin.com/in/godwin-metri-b346111a4/"
                 target="_blank"
-                className="hover:underline"
+                className="flex items-center gap-2 text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors"
               >
+                <Linkedin size={16} />
                 LinkedIn
               </a>
 
-              {/* TODO: Download actual resume. */}
-              <a href="/resume.pdf" target="_blank" className="hover:underline">
+              <a
+                href="/resume.pdf"
+                download="Godwin_Metri_Resume.pdf"
+                className="flex items-center gap-2 text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white transition-colors"
+              >
+                <FileText size={16} />
                 Resume
               </a>
             </div>

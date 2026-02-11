@@ -19,11 +19,13 @@ function Projects() {
         <div className="flex flex-col items-center gap-16">
           {/* Header */}
           <div className="text-center max-w-2xl">
-            <h2 className="text-3xl md:text-4xl font-bold">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
               Selected Projects
             </h2>
-            <div className="mt-3 mx-auto h-1 w-24 bg-blue-600 rounded-full" />
-            <p className="mt-4 text-gray-600">
+
+            <div className="mt-3 mx-auto h-1 w-24 bg-blue-600 dark:bg-blue-400 rounded-full" />
+
+            <p className="mt-4 text-gray-600 dark:text-gray-300">
               A selection of systems and platforms I’ve built and scaled in
               production.
             </p>
