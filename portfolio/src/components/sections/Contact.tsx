@@ -3,7 +3,7 @@ import Section from "../common/Section";
 
 function Contact() {
   return (
-    <Section id="contact" className="bg-gray-50">
+    <Section id="contact" className="bg-gray-50 dark:bg-gray-900">
       <FadeIn>
         <div className="flex flex-col items-center gap-10 text-center max-w-2xl mx-auto">
           {/* Header */}

@@ -3,7 +3,7 @@ import Section from "../common/Section";
 
 function About() {
   return (
-    <Section id="about" className="bg-gray-50">
+    <Section id="about" className="bg-gray-50 dark:bg-gray-900">
       <FadeIn>
         <div className="flex flex-col items-center gap-6 text-center max-w-3xl mx-auto">
           <span className="text-sm font-medium text-gray-500 uppercase tracking-wide">

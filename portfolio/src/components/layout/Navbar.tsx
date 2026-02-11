@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { motion } from "framer-motion";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const navItems = [
   { label: "Home", id: "home" },
@@ -11,6 +12,7 @@ const navItems = [
 
 function NavBar() {
   const [activeSection, setActiveSection] = useState("home");
+  const { dark, toggleTheme } = useContext(ThemeContext);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,7 +41,7 @@ function NavBar() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur border-b border-gray-200"
+      className="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur border-b border-gray-200"
     >
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo / Name */}
@@ -67,6 +69,12 @@ function NavBar() {
             </li>
           ))}
         </ul>
+        <button
+          onClick={toggleTheme}
+          className="ml-6 text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors"
+        >
+          {dark ? "Light" : "Dark"}
+        </button>
       </nav>
     </motion.header>
   );

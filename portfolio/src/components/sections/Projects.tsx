@@ -12,15 +12,6 @@ const containerVariants = {
   },
 };
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, ease: "easeOut" },
-  },
-};
-
 function Projects() {
   return (
     <Section id="projects">
@@ -49,13 +40,15 @@ function Projects() {
             {projects.map((project) => (
               <motion.div
                 key={project.title}
-                className="rounded-xl border border-gray-100 p-8 bg-white shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+                className="rounded-xl border border-gray-100 dark:border-gray-800 p-8 bg-white dark:bg-gray-900 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
               >
                 <h3 className="text-xl font-semibold">{project.title}</h3>
 
-                <p className="mt-3 text-gray-700">{project.description}</p>
+                <p className="mt-3 text-gray-700 dark:text-gray-300">
+                  {project.description}
+                </p>
 
-                <ul className="mt-4 space-y-2 text-sm text-gray-600">
+                <ul className="mt-4 space-y-2 text-sm text-gray-600 dark:text-gray-400">
                   {project.highlights.map((point) => (
                     <li key={point}>• {point}</li>
                   ))}
@@ -65,7 +58,7 @@ function Projects() {
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 rounded-full bg-gray-100 text-xs text-gray-800"
+                      className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-xs text-gray-800 dark:text-gray-200"
                     >
                       {tech}
                     </span>
@@ -76,7 +69,7 @@ function Projects() {
                   <a
                     href={project.link}
                     target="_blank"
-                    className="inline-block mt-6 text-sm font-medium text-blue-600 hover:underline"
+                    className="inline-block mt-6 text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
                   >
                     View Project →
                   </a>

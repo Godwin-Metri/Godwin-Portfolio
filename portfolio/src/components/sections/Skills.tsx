@@ -46,7 +46,7 @@ function Skills() {
             {skills.map((group) => (
               <motion.div
                 key={group.title}
-                className="rounded-xl bg-white p-6 border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+                className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
               >
                 {/* Card title */}
                 <h3 className="text-lg font-semibold mb-6 text-center">
@@ -58,7 +58,7 @@ function Skills() {
                   {group.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="px-3 py-1 rounded-full bg-gray-100 text-sm text-gray-800"
+                      className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200"
                     >
                       {skill}
                     </span>
