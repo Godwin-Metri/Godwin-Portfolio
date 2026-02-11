@@ -1,8 +1,10 @@
 import NavBar from "./components/layout/Navbar";
-import Section from "./components/common/Section";
 import Skills from "./components/sections/Skills";
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
+import Projects from "./components/sections/Projects";
+import Contact from "./components/sections/Contact";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
@@ -16,20 +18,11 @@ function App() {
 
         <Skills />
 
-        <Section
-          id="projects"
-          className="h-screen flex items-center justify-center"
-        >
-          <h1 className="text-4xl font-bold">Projects</h1>
-        </Section>
+        <Projects />
 
-        <Section
-          id="contact"
-          className="h-screen flex items-center justify-center bg-gray-50"
-        >
-          <h1 className="text-4xl font-bold">Contact</h1>
-        </Section>
+        <Contact />
       </main>
+      <Footer />
     </div>
   );
 }
