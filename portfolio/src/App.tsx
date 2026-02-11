@@ -5,6 +5,7 @@ import About from "./components/sections/About";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/layout/Footer";
+import SectionDivider from "./components/common/SectionDivider";
 
 function App() {
   return (
@@ -13,12 +14,16 @@ function App() {
 
       <main className="pt-16">
         <Hero />
+        <SectionDivider />
 
         <About />
+        <SectionDivider />
 
         <Skills />
+        <SectionDivider />
 
         <Projects />
+        <SectionDivider />
 
         <Contact />
       </main>
