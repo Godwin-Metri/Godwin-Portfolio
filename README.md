@@ -1,2 +1,1 @@
-# Godwin-Portfolio
-My personal portfolio website, created using React.js
+Personal Portfolio website built using React and Typescript.
