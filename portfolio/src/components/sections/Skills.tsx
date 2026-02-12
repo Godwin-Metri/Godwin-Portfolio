@@ -12,14 +12,6 @@ const containerVariants = {
   },
 };
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.45, ease: "easeOut" },
-  },
-};
 
 function Skills() {
   return (
@@ -29,7 +21,7 @@ function Skills() {
           {/* Section Header — CENTER aligned */}
           <div className="text-center max-w-2xl">
             <h2 className="text-3xl md:text-4xl font-bold">
-              Skills & Technologies
+              Technologies I Work With
             </h2>
 
             <div className="mt-3 mx-auto h-1 w-24 bg-blue-600 rounded-full" />
@@ -46,7 +38,7 @@ function Skills() {
             {skills.map((group) => (
               <motion.div
                 key={group.title}
-                className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+                className="rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
               >
                 {/* Card title */}
                 <h3 className="text-lg font-semibold mb-6 text-center">

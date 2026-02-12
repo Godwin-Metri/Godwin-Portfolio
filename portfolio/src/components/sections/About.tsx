@@ -13,24 +13,25 @@ function About() {
 
           {/* Heading */}
           <h2 className="text-3xl md:text-4xl font-bold leading-tight text-gray-900 dark:text-white">
-            How I build and scale software systems
+            How I Think About Building Systems
           </h2>
 
           {/* Paragraph 1 */}
           <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-            I’m a software engineer with 4.5+ years of experience building
-            cloud-native and distributed systems in production environments. I
-            specialize in backend architecture, high-throughput APIs, and
-            scalable system design.
+            I focus on clarity, scalability, and long-term maintainability. My
+            work revolves around designing systems that handle real production
+            traffic — not just work in theory. From decomposing monoliths into
+            microservices to optimizing high-throughput APIs, I aim to build
+            systems that remain stable under pressure.
           </p>
 
           {/* Paragraph 2 */}
           <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
             Currently, I work as a core backend engineer on an enterprise AI
-            platform, designing and scaling FastAPI-based microservices that
-            serve real-world traffic at scale. I enjoy working across the stack,
-            but I’m most passionate about backend systems and distributed
-            architectures.
+            platform, where I design and scale FastAPI-based services handling
+            tens of thousands of requests per second. I enjoy solving
+            performance bottlenecks, improving system architecture, and building
+            reliable infrastructure that teams can depend on.
           </p>
         </div>
       </FadeIn>

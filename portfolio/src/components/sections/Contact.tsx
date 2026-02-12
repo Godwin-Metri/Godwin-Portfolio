@@ -16,9 +16,9 @@ function Contact() {
             <div className="mt-3 mx-auto h-1 w-24 bg-blue-600 dark:bg-blue-400 rounded-full" />
 
             <p className="mt-4 text-gray-600 dark:text-gray-300">
-              Interested in collaborating, discussing backend systems,
-              distributed architecture, or new opportunities? I’d love to
-              connect.
+              If you’re building scalable systems, high-performance APIs, or
+              distributed platforms, I’d be glad to connect. Feel free to reach
+              out for collaborations, discussions, or new opportunities.
             </p>
           </div>
 

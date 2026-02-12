@@ -13,13 +13,15 @@ function Hero() {
             </h1>
 
             <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-200">
-              Software Engineer — Distributed Systems & Cloud Platforms
+              Full Stack Software Engineer — Distributed Systems & Cloud
+              Platforms
             </h2>
 
             <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
-              Software engineer with 4.5+ years of experience building scalable,
-              cloud-native platforms and high-throughput APIs, with a strong
-              focus on backend systems and distributed architectures.
+              I design and build high-performance backend systems that power
+              real-world applications at scale. With 4.5+ years of experience, I
+              specialize in distributed architectures, high-throughput APIs, and
+              cloud-native platforms.
             </p>
 
             <div className="flex gap-4 pt-4">

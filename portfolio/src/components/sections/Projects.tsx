@@ -20,14 +20,14 @@ function Projects() {
           {/* Header */}
           <div className="text-center max-w-2xl">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
-              Selected Projects
+              Selected Work
             </h2>
 
             <div className="mt-3 mx-auto h-1 w-24 bg-blue-600 dark:bg-blue-400 rounded-full" />
 
             <p className="mt-4 text-gray-600 dark:text-gray-300">
-              A selection of systems and platforms I’ve built and scaled in
-              production.
+              A selection of systems and platforms I’ve designed and scaled in
+              production environments.
             </p>
           </div>
 
@@ -42,7 +42,13 @@ function Projects() {
             {projects.map((project) => (
               <motion.div
                 key={project.title}
-                className="rounded-xl border border-gray-100 dark:border-gray-800 p-8 bg-white dark:bg-gray-900 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300"
+                className="rounded-xl 
+  border border-gray-300 dark:border-gray-800
+  bg-white dark:bg-gray-900
+  p-8 
+  shadow-sm hover:shadow-md 
+  hover:-translate-y-1 
+  transition-all duration-300"
               >
                 <h3 className="text-xl font-semibold">{project.title}</h3>
 
